@@ -1,0 +1,268 @@
+/* Variáveis para facilitar a mudança de tema */
+:root {
+    --cor-primaria: #007bff; /* Azul */
+    --cor-secundaria: #6c757d; /* Cinza */
+    --cor-fundo: #f8f9fa; /* Branco/Claro */
+    --cor-texto: #212529; /* Preto/Escuro */
+    --cor-card: #ffffff;
+    --cor-borda: #dee2e6;
+    --cor-destaque: #e9ecef; /* Cinza bem claro */
+}
+
+/* 7. Requisito Não Funcional: Design Prioriza Clareza e Legibilidade */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contêiner centraliza o conteúdo e garante que funcione bem em 1920px (Requisito 8) */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* 5. Estrutura do Site: Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Estilização básica de seções */
+section {
+    padding: 40px 0;
+}
+
+section h2, section h3 {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Lista de Tópicos (Requisito 5) */
+.lista-topicos {
+    list-style: none;
+    padding: 0;
+    /* 6. Requisito Técnico: Layout Responsivo (Grid para a lista) */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.lista-topicos li a {
+    display: block;
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.lista-topicos li a:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-primaria);
+    transform: translateY(-2px);
+}
+
+/* Rodapé (Requisito 5) */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilo do botão Modo Claro/Escuro (opcional) */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 0;
+    line-height: 1;
+}
+
+/* 6. Requisito Funcional: Responsividade (Mobile First + Media Query) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    #theme-toggle {
+        margin-top: 10px;
+    }
+
+    /* Reduz o espaçamento nas telas menores */
+    .container {
+        padding: 10px;
+    }
+}
+
+/* pressao.html */
+
+/* --- Estilos para as Páginas de Conteúdo (pressao.html, etc.) --- */
+
+.bloco-conteudo {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+}
+
+.bloco-conteudo h3 {
+    color: var(--cor-secundaria);
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Estilo para as fórmulas (centralizadas e destacadas) */
+.formula {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+/* Estilos para Exercícios */
+.exercicio {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px dashed var(--cor-secundaria);
+    border-radius: 8px;
+    background-color: var(--cor-destaque);
+}
+
+.exercicio h4 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+
+.exercicio ol {
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+.btn-resposta {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-resposta:hover {
+    background-color: #5a6268;
+}
+
+/* 6. Funcionalidade: Resposta Oculta */
+.resposta-oculta {
+    background-color: #d4edda; /* Fundo verde claro para a resposta */
+    color: #155724; /* Texto verde escuro */
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: none; /* A chave! A resposta começa oculta */
+    font-weight: bold;
+}
+
+.btn-tentar {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 40px auto 20px auto;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+.btn-tentar:hover {
+    background-color: #c82333;
+}
+
+body.dark-mode {
+    --cor-fundo: #212529; 
+    --cor-texto: #f8f9fa;
+    --cor-card: #343a40;
+    --cor-borda: #495057;
+    --cor-destaque: #495057;
+}
+
+body.dark-mode header {
+    background-color: #0056b3; 
+}
+
+body.dark-mode .lista-topicos li a {
+    color: var(--cor-texto);
+}
+
+body.dark-mode .exercicio {
+    background-color: #495057;
+    border: 1px dashed var(--cor-primaria);
+}
+
+body.dark-mode .resposta-oculta {
+    background-color: #1c7430; 
+    color: #f8f9fa; 
+    border: 1px solid #1c7430;
+}

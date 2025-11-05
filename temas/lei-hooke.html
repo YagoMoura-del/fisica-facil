@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei de Hooke e Força Elástica | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="lei-hooke">
+            <h2>10. Lei de Hooke e Força Elástica</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O que é a Lei de Hooke?</h3>
+                <p>A **Lei de Hooke** é uma lei da Física que descreve o comportamento de corpos elásticos, como molas. Ela estabelece que a Força Elástica ($\vec{F}_e$) que uma mola exerce é **proporcional** à deformação ($\Delta x$) que ela sofreu (esticamento ou compressão).</p>
+                <p>Em outras palavras, quanto mais você estica uma mola, maior é a força que ela faz para tentar voltar ao seu estado original.</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>A Fórmula da Força Elástica</h3>
+                <p>A Força Elástica ($\vec{F}_e$) é calculada pela seguinte relação:</p>
+                <p class="formula">$$|\vec{F}_e| = k \cdot |\Delta x|$$</p>
+                <p>Onde:</p>
+                <ul>
+                    <li>**$|\vec{F}_e|$** é o módulo da Força Elástica (em Newtons, $N$).</li>
+                    <li>**$k$** é a **Constante Elástica da mola** (uma medida de sua rigidez, em $N/m$).</li>
+                    <li>**$|\Delta x|$** é o módulo da **Deformação** da mola (diferença entre o comprimento final e o comprimento natural, em metros, $m$).</li>
+                </ul>
+            </div>
+
+            <div class="bloco-conteudo">
+                <h3>O Sinal Negativo (Opcional)</h3>
+                <p>Em sua forma vetorial, a Lei de Hooke costuma ser escrita como $\vec{F}_e = -k \cdot \vec{x}$. O sinal negativo indica que a Força Elástica é sempre uma **força de RESTAURAÇÃO**, agindo em sentido oposto ao vetor deslocamento da mola.</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Suspensão de Carros</h3>
+                <p>As molas de suspensão de um veículo são projetadas sob a Lei de Hooke. Elas devem ter uma constante elástica ($k$) adequada para absorver o peso do carro e as irregularidades do solo. Se a mola é muito rígida (alto $k$), o carro é duro; se é muito mole (baixo $k$), ele pode raspar o fundo facilmente.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Constante Elástica)</h4>
+                <p>O que a Constante Elástica ($k$) de uma mola representa?</p>
+                <ol type="a">
+                    <li>O comprimento máximo da mola.</li>
+                    <li>A força que a mola aplica quando deformada em $1$ metro.</li>
+                    <li>A rigidez da mola.</li>
+                    <li>A deformação máxima que a mola pode sofrer.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-hooke">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-hooke">Resposta Correta: **c) A rigidez da mola.** Quanto maior o $k$, mais "dura" e mais difícil de deformar a mola é.</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Cálculo)</h4>
+                <p>Uma mola com constante elástica $k = 200 N/m$ é esticada em $0.1$ metros. Qual é o módulo da Força Elástica exercida pela mola?</p>
+                <ol type="a">
+                    <li>$a$. $2 N$.</li>
+                    <li>$b$. $20 N$.</li>
+                    <li>$c$. $200 N$.</li>
+                    <li>$d$. $2000 N$.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-hooke">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-hooke">Resposta Correta: **b) $20 N$**. (Cálculo: $F_e = k \cdot \Delta x = 200 N/m \cdot 0.1 m = 20 N$).</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estática | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="estatica">
+            <h2>5. Estática (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O Conceito de Equilíbrio</h3>
+                <p>A **Estática** é o ramo da Mecânica que estuda as condições de equilíbrio dos corpos. Um corpo está em equilíbrio quando não há variação em seu estado de movimento (ou repouso), o que exige que ele satisfaça duas condições principais:</p>
+                
+                <h4>1. Equilíbrio de Translação</h4>
+                <p>A soma das forças ($\sum \vec{F}$) que agem sobre o corpo deve ser zero. O corpo está em repouso ($\vec{v} = 0$) ou em movimento retilíneo uniforme ($\vec{v} = constante$).</p>
+                <p class="formula">$$\sum \vec{F} = 0$$</p>
+                
+                <h4>2. Equilíbrio de Rotação</h4>
+                <p>A soma de todos os **Torques** (ou Momentos) ($\sum \vec{M}$) aplicados ao corpo, em relação a qualquer ponto, deve ser zero, impedindo o giro.</p>
+                <p class="formula">$$\sum \vec{M} = 0$$</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Torque (Momento de uma Força)</h3>
+                <p>O **Torque** ($\vec{M}$ ou $\tau$) mede a eficácia de uma força ($\vec{F}$) em causar rotação. O módulo do torque é dado por:</p>
+                <p class="formula">$$|\vec{M}| = |\vec{F}| \cdot d$$</p>
+                <p>Onde $d$ é o braço de alavanca (a menor distância entre a linha de ação da força e o eixo de rotação).</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Chave de Roda</h3>
+                <p>Ao usar uma chave de roda para soltar um parafuso, você gera um torque. Quanto mais longa for a chave (maior o braço de alavanca $d$), menor será a força $\vec{F}$ necessária para gerar o torque ($M$) suficiente para girar o parafuso.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Condições de Equilíbrio)</h4>
+                <p>Qual condição deve ser satisfeita para que um corpo rígido esteja em equilíbrio estático?</p>
+                <ol type="a">
+                    <li>$a$. A Força Resultante ($\sum \vec{F}$) e o Torque Resultante ($\sum \vec{M}$) são nulos.</li>
+                    <li>$b$. O corpo está em Movimento Retilíneo Uniforme.</li>
+                    <li>$c$. O centro de gravidade está o mais baixo possível.</li>
+                    <li>$d$. Apenas a Força Resultante é nula.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-estatica">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-estatica">Resposta Correta: **a) A Força Resultante ($\sum \vec{F}$) e o Torque Resultante ($\sum \vec{M}$) são nulos.**</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Cálculo de Torque)</h4>
+                <p>Uma força de $50 N$ é aplicada perpendicularmente a uma barra, a uma distância de $2 m$ do ponto de giro. Qual é o módulo do Torque gerado?</p>
+                <ol type="a">
+                    <li>$a$. $25 N \cdot m$.</li>
+                    <li>$b$. $50 N \cdot m$.</li>
+                    <li>$c$. $100 N \cdot m$.</li>
+                    <li>$d$. $200 N \cdot m$.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-estatica">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-estatica">Resposta Correta: **c) $100 N \cdot m$**. (Cálculo: $M = 50 N \cdot 2 m = 100 N \cdot m$).</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

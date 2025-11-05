@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho e Energia | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="trabalho-energia">
+            <h2>14. Trabalho e Energia</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O Princípio Fundamental: Trabalho e Energia</h3>
+                <p>O Trabalho ($\tau$) e a Energia (E) são conceitos intimamente ligados. Lembre-se que **Trabalho é a transferência de energia** que ocorre devido à aplicação de uma força que causa deslocamento.</p>
+                <p>O grande princípio que conecta tudo é o **Teorema da Energia Cinética** (já visto brevemente):</p>
+                <p class="formula">$$\tau_{total} = \Delta E_c$$</p>
+                <p>Onde o trabalho total realizado sobre um corpo resulta na variação de sua Energia Cinética (mudança de velocidade).</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Tipos de Forças e Energia</h3>
+                <p>As forças que atuam em um sistema podem ser classificadas como:</p>
+                
+                <h4>1. Forças Conservativas</h4>
+                <ul>
+                    <li>**Definição:** O trabalho realizado por elas depende apenas das posições inicial e final, e não do caminho percorrido (ex: Força Peso, Força Elástica).</li>
+                    <li>**Energia Associada:** Energia Potencial (Gravitacional ou Elástica).</li>
+                </ul>
+
+                <h4>2. Forças Não Conservativas (Dissipativas)</h4>
+                <ul>
+                    <li>**Definição:** O trabalho realizado por elas depende do caminho percorrido e dissipa energia (transforma em calor, som, etc. - ex: Força de Atrito, Resistência do Ar).</li>
+                    <li>**Energia Associada:** Perda de Energia Mecânica.</li>
+                </ul>
+            </div>
+
+            <div class="bloco-conteudo">
+                <h3>A Conservação da Energia Mecânica</h3>
+                <p>Em um sistema ideal onde **somente Forças Conservativas** atuam, a Energia Mecânica ($E_m$) total do sistema se conserva (permanece constante):</p>
+                <p class="formula">$$E_{m_{inicial}} = E_{m_{final}}$$</p>
+                <p>Se Forças Não Conservativas (Atrito) atuarem, o Trabalho Dissipado ($\tau_{at}$) será igual à variação da Energia Mecânica total:</p>
+                <p class="formula">$$\tau_{atrito} = \Delta E_{m} = E_{m_{final}} - E_{m_{inicial}}$$</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Um Pêndulo</h3>
+                <p>Se você solta um pêndulo, ele oscila. No ponto mais alto, a energia é totalmente Potencial Gravitacional. No ponto mais baixo, é totalmente Cinética. Em um mundo ideal, ele oscilaria para sempre (conservação de $E_m$). Na vida real, o atrito do ar dissipa a energia, fazendo-o parar (Trabalho do atrito).</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Conservação)</h4>
+                <p>Quando um sistema está sujeito apenas a Forças Conservativas, o que acontece com a sua Energia Mecânica total?</p>
+                <ol type="a">
+                    <li>Diminui continuamente.</li>
+                    <li>É convertida em calor.</li>
+                    <li>Permanece constante.</li>
+                    <li>É sempre igual ao Trabalho realizado.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-te">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-te">Resposta Correta: **c) Permanece constante.** (Princípio da Conservação da Energia Mecânica).</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Forças Dissipativas)</h4>
+                <p>A Força de Atrito é considerada uma força não conservativa porque:</p>
+                <ol type="a">
+                    <li>Ela não depende do deslocamento.</li>
+                    <li>Ela sempre é nula em sistemas isolados.</li>
+                    <li>O trabalho que ela realiza dissipa energia do sistema (geralmente em calor).</li>
+                    <li>Ela é a única força que realiza Trabalho.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-te">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-te">Resposta Correta: **c) O trabalho que ela realiza dissipa energia do sistema (geralmente em calor).**</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

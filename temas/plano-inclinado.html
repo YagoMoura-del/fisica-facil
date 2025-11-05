@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Inclinado | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="plano-inclinado">
+            <h2>9. Plano Inclinado (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O que é um Plano Inclinado?</h3>
+                <p>O **Plano Inclinado** é uma máquina simples usada para elevar objetos a uma determinada altura, exigindo uma força menor do que seria necessário para levantá-los verticalmente. Ele forma um ângulo ($\theta$) com a horizontal.</p>
+                <p>O conceito chave aqui é a **decomposição da Força Peso** ($\vec{P}$).</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Decomposição da Força Peso</h3>
+                <p>A Força Peso ($\vec{P}$) é decomposta em duas componentes:</p>
+                
+                <h4>1. Componente Paralela ao Plano ($P_{//}$)</h4>
+                <p>Esta componente é responsável por fazer o corpo deslizar ou descer o plano. É calculada por:</p>
+                <p class="formula">$$P_{//} = P \cdot \sin(\theta)$$</p>
+                
+                <h4>2. Componente Perpendicular ao Plano ($P_{\perp}$)</h4>
+                <p>Esta componente é compensada pela Força Normal ($N$), a força de contato do plano. É calculada por:</p>
+                <p class="formula">$$P_{\perp} = P \cdot \cos(\theta)$$</p>
+                <p>Lembrando que a Força Peso total é $P = m \cdot g$ (massa $\times$ gravidade).</p>
+            </div>
+
+            <div class="bloco-conteudo">
+                <h3>Força de Atrito no Plano Inclinado</h3>
+                <p>A Força de Atrito ($\vec{F}_{at}$) sempre se opõe ao movimento e é paralela ao plano. Ela depende da Força Normal ($N$) e do coeficiente de atrito ($\mu$):</p>
+                <p class="formula">$$F_{at} = \mu \cdot N$$</p>
+                <p>Como $N = P_{\perp}$, temos $N = m \cdot g \cdot \cos(\theta)$.</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Rampas</h3>
+                <p>Uma rampa de acessibilidade (plano inclinado) ilustra o princípio: em vez de levantar um peso verticalmente, você aplica uma força menor ($P_{//}$) ao longo de uma distância maior. O esforço é distribuído.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Decomposição)</h4>
+                <p>Qual componente da Força Peso é responsável por fazer um corpo deslizar para baixo em um plano inclinado sem atrito?</p>
+                <ol type="a">
+                    <li>$a$. A Força Normal ($N$).</li>
+                    <li>$b$. A componente Perpendicular ($P_{\perp}$).</li>
+                    <li>$c$. A Força de Atrito ($F_{at}$).</li>
+                    <li>$d$. A componente Paralela ($P_{//}$).</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-plano">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-plano">Resposta Correta: **d) A componente Paralela ($P_{//}$).** Esta componente age na direção do movimento no plano.</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Força Normal)</h4>
+                <p>Em um plano inclinado, qual força compensa diretamente a componente perpendicular da Força Peso ($P_{\perp}$)?</p>
+                <ol type="a">
+                    <li>$a$. A Força Peso total ($P$).</li>
+                    <li>$b$. A Força de Tração ($\vec{T}$).</li>
+                    <li>$c$. A Força Normal ($N$).</li>
+                    <li>$d$. A Força de Atrito ($F_{at}$).</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-plano">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-plano">Resposta Correta: **c) A Força Normal ($N$).** Ela é perpendicular ao plano e atua em sentido oposto a $P_{\perp}$.</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

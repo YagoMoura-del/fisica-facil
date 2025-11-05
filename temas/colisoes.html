@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colisões | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="colisoes">
+            <h2>7. Colisões (Choques Mecânicos) (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O Princípio da Conservação</h3>
+                <p>Colisões são interações de curta duração entre corpos. Em qualquer colisão em um **sistema isolado**, o princípio fundamental que sempre se aplica é a **Conservação da Quantidade de Movimento**.</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Quantidade de Movimento</h3>
+                <p>A **Quantidade de Movimento ($\vec{Q}$)** total do sistema é conservada antes e depois do choque. A quantidade de movimento de um corpo é dada por $\vec{Q} = m \cdot \vec{v}$ (massa $\times$ velocidade). O princípio é escrito como:</p>
+                <p class="formula">$$Q_{antes} = Q_{depois}$$</p>
+                <p>Para dois corpos ($A$ e $B$):</p>
+                <p class="formula">$$m_A v_{A_{antes}} + m_B v_{B_{antes}} = m_A v_{A_{depois}} + m_B v_{B_{depois}}$$</p>
+            </div>
+
+            <div class="bloco-conteudo">
+                <h3>Tipos de Colisões e Energia Cinética</h3>
+                <p>Os tipos de colisão são classificados pela conservação da Energia Cinética ($\Delta E_c$), medida pelo Coeficiente de Restituição ($e$):</p>
+                <ul>
+                    <li>**Perfeitamente Elástica ($e=1$):** Máxima conservação da energia cinética. ($\Delta E_c = 0$).</li>
+                    <li>**Parcialmente Elástica ($0 < e < 1$):** Há perda de energia cinética. ($\Delta E_c < 0$).</li>
+                    <li>**Inelástica ($e=0$):** Perda máxima de energia cinética e os corpos seguem unidos.</li>
+                </ul>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Bilhar</h3>
+                <p>Uma colisão de bilhar entre duas bolas de mesma massa que se chocam frontalmente é quase perfeitamente elástica ($e \approx 1$). A Quantidade de Movimento total do sistema (bola $1$ + bola $2$) é conservada.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Conservação)</h4>
+                <p>Qual grandeza física é sempre conservada em **qualquer** tipo de colisão em um sistema isolado?</p>
+                <ol type="a">
+                    <li>$a$. Energia Cinética ($E_c$).</li>
+                    <li>$b$. Força Resultante ($\sum \vec{F}$).</li>
+                    <li>$c$. Energia Potencial ($E_p$).</li>
+                    <li>$d$. Quantidade de Movimento ($\vec{Q}$).</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-colisao">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-colisao">Resposta Correta: **d) Quantidade de Movimento ($\vec{Q}$).**</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Energia)</h4>
+                <p>Se, após uma colisão, a energia cinética do sistema for menor do que antes do choque, a colisão é classificada como:</p>
+                <ol type="a">
+                    <li>$a$. Perfeitamente Elástica.</li>
+                    <li>$b$. Parcialmente Elástica ou Inelástica.</li>
+                    <li>$c$. Superelástica.</li>
+                    <li>$d$. Totalmente Conservada.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-colisao">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-colisao">Resposta Correta: **b) Parcialmente Elástica ou Inelástica.**</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidrostática | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hidrostatica">
+            <h2>2. Hidrostática (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O Conceito de Pressão Hidrostática</h3>
+                <p>A **Pressão Hidrostática** é a pressão exercida por um fluido em repouso (líquido) devido à sua própria força peso. Essa pressão aumenta com a profundidade, pois o peso da coluna de fluido acima do ponto considerado é maior.</p>
+                
+                <h4>Lei de Stevin (ou Pressão Total)</h4>
+                <p>A pressão total ($P$) em um ponto submerso é a soma da pressão atmosférica ($P_0$) com a pressão hidrostática:</p>
+                <p class="formula">$$P = P_0 + \rho \cdot g \cdot h$$</p>
+                <p>Onde $\rho$ é a densidade do fluido (em $kg/m^3$), $g$ é a aceleração da gravidade (em $m/s^2$) e $h$ é a profundidade (em $m$). A unidade de pressão é o Pascal ($Pa$).</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Princípio de Pascal</h3>
+                <p>O **Princípio de Pascal** afirma que a variação de pressão ($\Delta P$) aplicada em um ponto de um fluido incompressível e em equilíbrio se transmite integralmente a todos os pontos do fluido e às paredes do recipiente.</p>
+                <p>Este princípio é a base para o funcionamento de prensas e elevadores hidráulicos, onde uma pequena força ($F_1$) em uma pequena área ($A_1$) resulta em uma grande força ($F_2$) em uma grande área ($A_2$):</p>
+                <p class="formula">$$\frac{F_1}{A_1} = \frac{F_2}{A_2}$$</p>
+            </div>
+            
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Sistemas de Freios</h3>
+                <p>O sistema de freios hidráulicos de um carro utiliza o Princípio de Pascal. A pequena força que você aplica no pedal (pequena área) se transforma em uma grande força nas rodas (grande área), capaz de parar o veículo.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Stevin)</h4>
+                <p>Em um líquido em repouso, a pressão hidrostática depende de qual destas variáveis?</p>
+                <ol type="a">
+                    <li>$a$. A área do fundo do recipiente ($A$).</li>
+                    <li>$b$. A aceleração do recipiente ($a$).</li>
+                    <li>$c$. A profundidade ($h$).</li>
+                    <li>$d$. A temperatura do fluido ($T$).</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-hidro">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-hidro">Resposta Correta: **c) A profundidade ($h$).**</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Pascal)</h4>
+                <p>Em uma prensa hidráulica, uma força de $100 N$ é aplicada em uma área de $2 m^2$. Qual deve ser a área ($A_2$) para obter uma força de saída de $500 N$?</p>
+                <ol type="a">
+                    <li>$a$. $1 m^2$.</li>
+                    <li>$b$. $5 m^2$.</li>
+                    <li>$c$. $10 m^2$.</li>
+                    <li>$d$. $100 m^2$.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-hidro">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-hidro">Resposta Correta: **c) $10 m^2$**. (Cálculo: $F_1/A_1 = F_2/A_2 \implies 100/2 = 500/A_2 \implies 50 = 500/A_2 \implies A_2 = 10 m^2$).</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

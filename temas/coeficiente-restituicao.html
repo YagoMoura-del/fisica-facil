@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coeficiente de Restituição | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="coeficiente-restituicao">
+            <h2>6. Coeficiente de Restituição ($e$) (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O que é o Coeficiente de Restituição?</h3>
+                <p>O **Coeficiente de Restituição ($e$)** é uma grandeza adimensional utilizada para medir a "elasticidade" de uma colisão (choque mecânico). Ele indica a proporção da energia cinética que é conservada durante o choque.</p>
+                <p>O coeficiente é definido pela razão entre o módulo da velocidade relativa de afastamento ($V_{af}$) e o módulo da velocidade relativa de aproximação ($V_{ap}$):</p>
+                <p class="formula">$$e = \frac{|V_{af}|}{|V_{ap}|}$$</p>
+                <p>O valor de $e$ sempre varia entre $0$ e $1$ ($0 \leq e \leq 1$).</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Tipos de Colisões</h3>
+                <p>O valor de $e$ é usado para classificar os três tipos principais de colisões:</p>
+                
+                <h4>1. Colisão Perfeitamente Elástica ($e=1$)</h4>
+                <ul>
+                    <li>A **Energia Cinética é conservada** (não há perda de energia).</li>
+                </ul>
+
+                <h4>2. Colisão Parcialmente Elástica ($0 < e < 1$)</h4>
+                <ul>
+                    <li>É o caso mais comum. Há perda de energia cinética.</li>
+                </ul>
+
+                <h4>3. Colisão Inelástica ou Plástica ($e=0$)</h4>
+                <ul>
+                    <li>A velocidade de afastamento é zero (os corpos **permanecem unidos**).</li>
+                    <li>A perda de energia cinética é máxima.</li>
+                </ul>
+            </div>
+
+            <div class="bloco-conteudo">
+                <h3>Coeficiente para Quedas</h3>
+                <p>Em um caso específico de uma bola caindo e quicando no chão, o coeficiente pode ser calculado pela altura inicial ($H_{inicial}$) e a altura após o primeiro quique ($H_{final}$):</p>
+                <p class="formula">$$e \approx \sqrt{\frac{H_{final}}{H_{inicial}}}$$</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Bolas Esportivas</h3>
+                <p>Uma bola de basquete (altamente elástica) tem um $e$ próximo a $1$, pois ela quica quase até a altura original. Já uma bola de massa (que deforma e não retorna) teria um $e$ próximo a $0$.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Classificação)</h4>
+                <p>Uma colisão onde os corpos permanecem unidos após o choque é classificada como:</p>
+                <ol type="a">
+                    <li>$a$. Perfeitamente Elástica.</li>
+                    <li>$b$. Parcialmente Elástica.</li>
+                    <li>$c$. Inelástica ($e=0$).</li>
+                    <li>$d$. Superelástica.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-coef">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-coef">Resposta Correta: **c) Inelástica ($e=0$).**</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Valor de $e$)</h4>
+                <p>Qual valor de $e$ indica que a Energia Cinética foi totalmente conservada durante a colisão?</p>
+                <ol type="a">
+                    <li>$a$. $e = 0$.</li>
+                    <li>$b$. $0 < e < 1$.</li>
+                    <li>$c$. $e = 1$.</li>
+                    <li>$d$. $e = 2$.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-coef">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-coef">Resposta Correta: **c) $e = 1$.**</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

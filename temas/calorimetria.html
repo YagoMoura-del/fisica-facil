@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorimetria | Física Fácil</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Física Fácil</h1>
+            <nav>
+                <a href="../index.html">Início</a> 
+                <a href="#exercicios">Exercícios</a>
+                <button id="theme-toggle">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="calorimetria">
+            <h2>13. Calorimetria (Revisão)</h2>
+
+            <div class="bloco-conteudo">
+                <h3>O que é Calor?</h3>
+                <p>O **Calor** ($Q$) é energia térmica em trânsito, transferida entre corpos devido à **diferença de temperatura** entre eles. O calor flui espontaneamente do corpo mais quente para o corpo mais frio.</p>
+                <p>A unidade de calor mais comum é o **Joule ($J$)** no $SI$, mas a **Caloria ($cal$)** também é usada ($1 cal \approx 4,18 J$).</p>
+                
+                <h4>Capacidade Térmica ($C$)</h4>
+                <p>É a energia necessária para alterar a temperatura de um corpo em $1^\circ C$ ou $1 K$.</p>
+            </div>
+            
+            <div class="bloco-conteudo">
+                <h3>Tipos de Calor</h3>
+                <p>O calor transferido pode gerar dois efeitos distintos no corpo:</p>
+                
+                <h4>1. Calor Sensível ($Q_s$)</h4>
+                <p>É o calor que provoca **variação de temperatura** ($\Delta T$), mas **não muda o estado físico**. É calculado pela equação fundamental, conhecida como **"$Q = mc\Delta T$"**:</p>
+                <p class="formula">$$Q_s = m \cdot c \cdot \Delta T$$</p>
+                <p>Onde $c$ é o **Calor Específico**.</p>
+                
+                <h4>2. Calor Latente ($Q_L$)</h4>
+                <p>É o calor que provoca **mudança de estado físico**, mas **não muda a temperatura** (durante a transição). É calculado pela equação **"$Q = mL$"**:</p>
+                <p class="formula">$$Q_L = m \cdot L$$</p>
+                <p>Onde $L$ é o **Calor Latente** de transformação.</p>
+            </div>
+
+            <div class="bloco-exemplo">
+                <h3>Exemplo Prático: Curva de Aquecimento da Água</h3>
+                <p>Ao aquecer água, o calor é latente ($Q_L$) na fusão (gelo $\to$ água a $0^\circ C$) e na ebulição (água $\to$ vapor a $100^\circ C$). Entre essas fases, o calor é sensível ($Q_s$), aumentando a temperatura.</p>
+                </div>
+
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios</h3>
+
+            <div class="exercicio">
+                <h4>Questão 1 (Calor Sensível)</h4>
+                <p>Qual tipo de calor é responsável por alterar a temperatura ($\Delta T$) de um corpo sem mudar seu estado físico?</p>
+                <ol type="a">
+                    <li>$a$. Calor Latente ($Q_L$).</li>
+                    <li>$b$. Calor Volumétrico.</li>
+                    <li>$c$. Calor Sensível ($Q_s$).</li>
+                    <li>$d$. Energia Cinética ($E_c$).</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q1-calor">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q1-calor">Resposta Correta: **c) Calor Sensível ($Q_s$).**</p>
+            </div>
+
+            <div class="exercicio">
+                <h4>Questão 2 (Mudança de Fase)</h4>
+                <p>Durante uma mudança de estado físico (ex: fusão), se o calor for adicionado ao sistema:</p>
+                <ol type="a">
+                    <li>$a$. A temperatura aumenta rapidamente.</li>
+                    <li>$b$. A temperatura permanece constante.</li>
+                    <li>$c$. O Calor Específico ($c$) dobra.</li>
+                    <li>$d$. Ocorre a dilatação térmica.</li>
+                </ol>
+                
+                <button class="btn-resposta" data-resposta="q2-calor">Ver Resposta</button>
+                <p class="resposta-oculta" id="resposta-q2-calor">Resposta Correta: **b) A temperatura permanece constante.**</p>
+            </div>
+            
+            <button class="btn-tentar">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Física Fácil | Desenvolvido por [Seu Nome].</p>
+            <p>Contato: [Seu E-mail]</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
